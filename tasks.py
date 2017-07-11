@@ -26,7 +26,7 @@ def echo_response(message):
       print(msg)
       ReplyToActivity(fill=message,
                     text=msg).send()
-    elif message.get('attachments):
+    elif message.get('attachments'):
       ReplyToActivity(fill=message,
                       text=message).send()
     else:
