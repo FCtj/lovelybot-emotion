@@ -28,7 +28,7 @@ def echo_response(message):
                     text=msg).send()
     elif message.get('attachments'):
       ReplyToActivity(fill=message,
-                      text=message).send()
+                      text=str(message)).send()
     else:
       data =  {
         "documents": [
